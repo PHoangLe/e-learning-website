@@ -1,79 +1,112 @@
-/* Reset CSS */
-
 *{
-    padding: 0;
-    margin: 0;
+    --header-height: 100px;
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
+.header{
+    display: flex;
+    position: fixed;
+    height: var(--header-height);
+    left: 0px;
+    top: 0px;
+    right: 0px;
 
-html {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-#main{
-
-}
-
-#header{
-    height: 103px;
-    box-shadow: 3px;
-    border: 1px solid #000000;
+    background: rgba(255, 255, 255, 0.9);
+    border: 0px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
-
-#course_nav {
-    position: relative;
-}
-
-#course_nav li {
-    position: relative;
-    display: inline-block;
-    line-height: 103px;
-    font-size: 24px;
-    min-width: 30px;
-}
-
-#logo {
-    width: 368px;
-    display: inline-block;
+#nav{
+    display: inline-flex;
+    margin-left: 200px;
     text-align: center;
-    line-height: 103px;
+    height: var(--header-height);
+    margin: auto;
+    font-size: 20px;
 }
-
-#logo a{
-    text-decoration: none;
-    font-size: 50px;
-    color: #17ACAC;
+#logo{
+    font-family: 'Kohinoor Bangla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    line-height: var(--header-height);
+    margin-left: 20px;
+    margin-right: 100px;
 }
-
-#nav {
-    position: relative;
-}
-
-#nav li {
-    position: relative;
-    display: inline-block;
-    line-height: 103px;
-    font-size: 24px;
-    min-width: 30px;
+#nav-item{
+    display: inline-flex;
+    color: #000000;
+    margin: auto;
+    padding: 0 10px;
+    min-width: fit-content;
+    font-family: 'Kohinoor Bangla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 #nav li a {
     text-decoration: none;
-    color: #444444;
-    display: flex;
-    padding: 0 38px;
-    min-width: 30px;
+    padding: 4px;
+    color: black;
+    transition: box-shadow .4s;
 }
 
-#nav li:hover a {
-    background-color: #17ACAC;
+#nav li:hover a{
+    box-shadow: 0 3px #339C9C;
+    font-weight: 550;
 }
 
-#content{
-
+.content{
+    
 }
 
-#footer{
 
+.footer{
+    
+}
+
+
+
+/* Lesson page */
+
+#lesson-nav{
+    display: inline-flex;
+    text-align: center;
+    height: var(--header-height);
+    font-size: 20px;
+}
+
+#lesson-nav li {
+    display: inline-flex;
+    color: #000000;
+    margin: auto;
+    padding: 0 10px;
+    min-width: fit-content;
+    font-family: 'Kohinoor Bangla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#lesson-nav li a{
+    text-decoration: none;
+    padding: 4px;
+    color: black;
+    transition: box-shadow .4s;
+}
+
+#lesson-nav li:hover a{
+    box-shadow: 0 3px #339C9C;
+    font-weight: 550;
+}
+
+#lesson-nav-logo {
+    position: absolute;
+    line-height: var(--header-height);
+    text-decoration: none;
+    padding: 4px;
+    color: black;
 }
