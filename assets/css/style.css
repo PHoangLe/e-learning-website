@@ -35,7 +35,7 @@
     margin-left: 20px;
     margin-right: 100px;
 }
-#nav-item{
+#nav li{
     display: inline-flex;
     color: #000000;
     margin: auto;
