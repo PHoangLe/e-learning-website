@@ -1,0 +1,138 @@
+/* Lesson page */
+
+*{
+    --header-height: 60px;
+    --content-height: 1500px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    font-family: 'Kohinoor Bangla';
+}
+
+#main{
+    display: relative;
+    height: 1660px;
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    position: fixed;
+    height: var(--header-height);
+    left: 0px;
+    top: 0px;
+    right: 0px;
+
+    background: rgba(255, 255, 255, 0.9);
+    border: 0px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+#lesson-nav{
+    display: inline-flex;
+    text-align: center;
+    height: var(--header-height);
+    font-size: 20px;
+    min-width: 110px;
+}
+
+#lesson-nav li {
+    display: inline-flex;
+    color: #000000;
+    margin: auto;
+    padding: 0 10px;
+    min-width: fit-content;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#lesson-nav li a{
+    text-decoration: none;
+    padding: 4px;
+    color: black;
+    transition: box-shadow .4s;
+}
+
+#lesson-nav li:hover a,
+#login-btn:hover a{
+    box-shadow: 0 3px #339C9C;
+    font-weight: 550;
+}
+
+
+#lesson-nav-logo {
+    position: relative;
+    display: inline-block;
+    line-height: var(--header-height);
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    color: #0E8585;
+}
+
+#login-btn,
+#register-btn{
+    min-width: 120px;
+    line-height: var(--header-height);
+    text-align: center;
+}
+
+#login-btn a{
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#register-btn .button{
+    background-color: #0E8585;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border-style: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+#register-btn .button:hover{
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+}
+
+#content{
+    position: absolute;
+    display: flex;
+    width: 90%;
+    height: 1500px;
+    background-color: #FDFAFA;
+    top: 100px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 0 0 0 5%;
+    padding-bottom: 10px;
+}
+
+#footer{
+    position: absolute;
+    top: 1610px;
+    right: 60px;
+    margin-bottom: 10px;
+    min-width: 200px;
+    height: 50px;
+}
+
+#footer a{
+    color: #339C9C;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+#footer img{
+    width: 30px;
+    height: 30px;
+    line-height: 50px;
+}
