@@ -102,6 +102,8 @@ html{
     box-shadow: 0px 0px 2px 2px rgb(0,0,0);
 }
 
+/* content */
+
 #content{
     position: absolute;
     display: flex;
@@ -113,7 +115,97 @@ html{
     border-radius: 20px;
     margin: 0 0 0 5%;
     padding-bottom: 10px;
+    min-width: 850px;
 }
+
+.title{
+    position: absolute;
+    font-size: 30px;
+    min-width: fit-content;
+    top : 42px;
+    left: 50px;
+    margin-right: 35px;
+    color: #339C9C;
+    border-bottom: 2px solid #0E8585;
+    padding-bottom: 3px;
+}
+
+.lesson-video{
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    right: 472px;
+    min-width: 800px;
+    align-items: center;
+    border: none;
+}
+
+.lesson-video iframe{
+    width: 100%;
+    height: 462px;
+    border: none;
+    border-radius: 10px;
+}
+
+#note{
+    position: relative;
+    height: 462px;
+    width: 408px;
+    background-color: aquamarine;
+    left: 892px;
+    top: 120px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+}
+
+#note-header{
+    background-color: bisque;
+    height: 60px;
+}
+
+#note-header button{
+    position: relative;
+    height: 40px;
+    top: 10px;
+    left: 275px;
+    border-radius: 10px;
+    border: none;
+    padding: 0px 10px 0px 10px;
+    font-size: 15px;
+}
+
+#note-content{
+    position: relative;
+    min-height: 40px;
+    height: fit-content;
+    max-height: 373px;
+    max-width: 398px;
+    top: 10px;
+    left: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+
+#note-item{
+    list-style: none;
+}
+
+#note-item li{
+    min-height: 40px;
+    height: fit-content;
+    max-height: 373px;
+    font-size: 17px;
+    line-height: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+#note-item li:last-child{
+    border-bottom: none;
+}
+
+/* footer */
 
 #footer{
     position: absolute;
